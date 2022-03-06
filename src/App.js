@@ -21,6 +21,9 @@ function App() {
 
   const onDeleteTodo = useCallback(
     (id) => {
+      setTodoList(
+        todoList.filter(todo => todo.id !== id)
+      );
     },[]
   )
 
